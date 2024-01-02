@@ -1,0 +1,97 @@
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+.box:nth-child(1){
+    background-color: brown;
+}
+.box:nth-child(2){
+    background-color: yellow;
+}
+.box:nth-child(3){
+    background-color: greenyellow;
+}
+.position{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+
+/*absolute*/
+img{
+    display: block;
+    width: 100%;
+}
+.wrap{
+    position: relative;
+    max-width: 0;
+    padding: 0;
+    margin-right: 150px;
+}
+.label{
+    position: absolute;
+    top: -24px;
+    right: 0;
+    background-color: aqua;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 700px;
+    padding: 8px 16px;
+}
+
+/*fixed*/
+.chat-button{
+    position: fixed;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    right: 40px;
+    bottom: 50px;
+    width: 65px;
+    height: 65px;
+    border: none;
+}
+
+/*zz*/
+.box-wrap{
+   position: relative;
+}
+.box-shadow{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 1 px solid gray;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-shadow:nth-child(1){
+    background-color: aquamarine;
+    top: 20px;
+    z-index: 1;
+}
+.box-shadow:nth-child(2){
+    background-color: red;
+    top: 30px;
+    left: 150px;
+    z-index: 2;
+}
+.box-shadow:nth-child(3){
+    background-color: darkkhaki;
+    z-index: 3;
+    top: 90px;
+    left: 180px;
+}
+.box-shadow:nth-child(4){
+    background-color: fuchsia;
+    z-index: 4;
+}
